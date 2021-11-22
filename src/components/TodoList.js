@@ -2,14 +2,12 @@ import React, {useState} from 'react';
 import './TodoList.css';
 import TodoTask from "./TodoTask";
 
-function TodoList({tasks}) {
+function TodoList({tasks, handleStatusChange, handleRemoveChange, handleEditChange}) {
 
-    const todoList = tasks.map(task => <TodoTask task={task}/>)
-
+    const todoList = tasks.map(task => <TodoTask handleStatusChange={handleStatusChange} handleRemoveChange={handleRemoveChange} handleEditChange={handleEditChange}  task={task}/>)
     return (
 
         <div className="OuterBox">
-            <p>outerbox</p>
             {todoList}
         </div>
     );

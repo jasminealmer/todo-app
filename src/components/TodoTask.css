@@ -1,4 +1,27 @@
 .TaskBox{
-    border-style: dotted;
-    border-color: green;
+    border-bottom: cadetblue;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.right-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-box{
+    text-align: left;
+}
+
+.task-text{
+    font-weight: bold;
+}
+
+.task-status{
+    font-size: small;
 }
