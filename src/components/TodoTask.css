@@ -12,6 +12,7 @@
 .right-box{
     display: flex;
     flex-direction: row;
+    padding-top: 15px;
 }
 
 .left-box{
@@ -28,6 +29,7 @@
 
 .task-status{
     font-size: small;
+    cursor: pointer;
 }
 
 .line-through {
@@ -57,4 +59,12 @@
         color: #FF4742; } 
         
         
-.buttonStyling:active { opacity: .5; }
+.buttonStyling:active { 
+  opacity: .5; 
+}
+
+.trash-can{
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 2px;
+}

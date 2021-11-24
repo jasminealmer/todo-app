@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./TodoTask.css"
 import Checked from "./img/checked.png"
 import Unchecked from "./img/unchecked.png"
+import Trash from "./img/trash-can.png"
 
 function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChange }) {
 
@@ -43,7 +44,7 @@ function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChan
                     </label>
                     <input className="buttonStyling" type="submit" value="Update" />
                 </form>
-                <button onClick={handleRemove}>Remove</button>
+                <div className="trash-can" onClick={handleRemove}><img src={Trash}/></div>
             </div>
         </div >
     );
