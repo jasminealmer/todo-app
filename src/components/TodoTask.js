@@ -42,7 +42,7 @@ function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChan
                             onChange={(e) => setTask(e.target.value)}
                         />
                     </label>
-                    <input type="submit" value="Update" />
+                    <input className="buttonStyling" type="submit" value="Update" />
                 </form>
                 <div className="trash-can" onClick={handleRemove}><img src={Trash}/></div>
             </div>
