@@ -18,12 +18,13 @@ function NewTodoTask({ addTodoTask }) {
                 <form onSubmit={handleSubmit} >
                     <label>
                         <input
+                            className="form_field"
                             type="text"
                             value={text}
                             onChange={(e) => setTask(e.target.value)}
                         />
                     </label>
-                    <input type="submit" />
+                    <input className="buttonStyling" type="submit" value="+"/>
                 </form>
             </div>
         </div>

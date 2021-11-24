@@ -50,13 +50,17 @@
     text-align: center; text-rendering: geometricprecision; 
     text-transform: none; 
     user-select: none; -webkit-user-select: none; 
-    touch-action: manipulation; vertical-align: middle; } 
+    touch-action: manipulation; vertical-align: middle; 
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
     
     
 .buttonStyling:hover, .buttonStyling:active { 
-        background-color: initial; 
-        background-position: 0 0; 
-        color: #FF4742; } 
+    background-color: initial; 
+    background-position: 0 0; 
+    color: #FF4742; } 
         
         
 .buttonStyling:active { 
@@ -66,5 +70,14 @@
 .trash-can{
     cursor: pointer;
     padding-left: 15px;
-    padding-top: 2px;
+    padding-top: 5px;
+}
+
+.input-field{
+    margin-left: 5px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid grey;
+    width: 60%;
+    background-color: rgba(202, 208, 211, 0);
 }

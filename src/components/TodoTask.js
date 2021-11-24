@@ -19,6 +19,7 @@ function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChan
     const handleEdit = (event) => {
         event.preventDefault();
         handleEditChange(task.id, text)
+        setTask('')
     }
 
     return (
@@ -35,14 +36,13 @@ function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChan
             <div className="right-box">
                 <form onSubmit={handleEdit} >
                     <label>
-                        Edit task:
-                        <input
+                        <input className="input-field"
                             type="text"
                             value={text}
                             onChange={(e) => setTask(e.target.value)}
                         />
                     </label>
-                    <input className="buttonStyling" type="submit" value="Update" />
+                    <input className="buttonStyling" type="submit" value="Edit" />
                 </form>
                 <div className="trash-can" onClick={handleRemove}><img src={Trash}/></div>
             </div>
