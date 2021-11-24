@@ -8,7 +8,6 @@ function NewTodoTask({ addTodoTask }) {
     const handleSubmit = (event) => {
         event.preventDefault();
         addTodoTask({ text })
-        alert('The task has been added successfully!')
         setTask('')
     }
 

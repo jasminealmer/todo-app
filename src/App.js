@@ -4,7 +4,7 @@ import TodoTitle from './components/TodoTitle';
 import TodoList from './components/TodoList';
 import NewTodoTask from './components/NewTodoTask';
 
-const initialState = [{id: 1, text: "task1", completed: false}, {id: 2, text: "task", completed: true}]
+const initialState = [{id: 1, text: "Städa rummet", completed: false}, {id: 2, text: "Ring girlfriend", completed: true}]
 
 function App() {
   

@@ -4,7 +4,7 @@ import './TodoTitle.css'
 function TodoTitle() {
     return (
       <div className='Title'>
-        <h1>Hampus och Jasmines Todo-app</h1>
+        <h1>HampJamp App</h1>
       </div>
     );
   }

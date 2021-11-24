@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./TodoTask.css"
+import Checked from "./img/checked.png"
+import Unchecked from "./img/unchecked.png"
 
 function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChange }) {
 
@@ -16,19 +18,17 @@ function TodoTask({ task, handleStatusChange, handleRemoveChange, handleEditChan
     const handleEdit = (event) => {
         event.preventDefault();
         handleEditChange(task.id, text)
-        alert('The task has been editedsuccessfully!')
     }
 
     return (
 
         <div className="TaskBox">
             <div className="left-box">
-                <div className="task-text">
-                    {task.text}
+                <div onClick={handleChange} className="task-status">
+                    {task.completed == true ? <img src={Checked}/> : <img src={Unchecked}/> }
                 </div>
-                <div className="task-status">
-                    {task.completed == true ? 'completed' : 'not completed'}
-                    <button onClick={handleChange}>Complete</button>
+                <div className={`task-text ${task.completed && "line-through"}`}>
+                    {task.text}
                 </div>
             </div>
             <div className="right-box">

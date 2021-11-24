@@ -16,12 +16,20 @@
 
 .left-box{
     text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .task-text{
     font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 .task-status{
     font-size: small;
+}
+
+.line-through {
+    text-decoration-line: line-through;
 }
