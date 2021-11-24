@@ -12,6 +12,7 @@
 .right-box{
     display: flex;
     flex-direction: row;
+    padding-top: 15px;
 }
 
 .left-box{
@@ -28,8 +29,15 @@
 
 .task-status{
     font-size: small;
+    cursor: pointer;
 }
 
 .line-through {
     text-decoration-line: line-through;
+}
+
+.trash-can{
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 2px;
 }
